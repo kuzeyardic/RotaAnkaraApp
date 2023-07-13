@@ -76,6 +76,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E03E7BC2A6010E9008BE723 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E18117D2A5FEE26007B2A39 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E03E7BE2A601110008BE723 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E03E7BF2A601204008BE723 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6E03E7C02A601240008BE723 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E18117F2A5FEE26007B2A39 /* Main.storyboard */,
+				6E1811842A5FEE27007B2A39 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6E18116D2A5FEE26007B2A39 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +132,11 @@
 			children = (
 				6E1811792A5FEE26007B2A39 /* AppDelegate.swift */,
 				6E18117B2A5FEE26007B2A39 /* SceneDelegate.swift */,
-				6E18117D2A5FEE26007B2A39 /* ViewController.swift */,
-				6E18117F2A5FEE26007B2A39 /* Main.storyboard */,
+				6E03E7BE2A601110008BE723 /* Models */,
+				6E03E7BF2A601204008BE723 /* ViewModels */,
+				6E03E7BC2A6010E9008BE723 /* Controllers */,
+				6E03E7C02A601240008BE723 /* Views */,
 				6E1811822A5FEE27007B2A39 /* Assets.xcassets */,
-				6E1811842A5FEE27007B2A39 /* LaunchScreen.storyboard */,
 				6E1811872A5FEE27007B2A39 /* Info.plist */,
 			);
 			path = RotaAnkaraApp;
