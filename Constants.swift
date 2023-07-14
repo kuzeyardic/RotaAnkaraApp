@@ -7,11 +7,4 @@
 
 import Foundation
 import UIKit
-struct  Constants{
-    
-    
-    
-    struct Colors{
-        static var: UIColor
-    }
-}
+
