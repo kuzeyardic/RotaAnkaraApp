@@ -23,6 +23,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var registerToAppButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .black
         self.navigationItem.hidesBackButton = true
         registerToAppButton.setButton(title: "Kayıt Ol")
         b1.setButton(title: "")
