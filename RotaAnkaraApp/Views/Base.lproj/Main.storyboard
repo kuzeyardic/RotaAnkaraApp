@@ -76,13 +76,30 @@
             </objects>
             <point key="canvasLocation" x="278.62595419847327" y="85.91549295774648"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="iZ7-JQ-S4Y">
             <objects>
-                <viewController id="cYp-mo-6zF" customClass="LoginViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cYp-mo-6zF" customClass="RegisterViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBK-Z6-8LT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnM-Uh-vhc">
+                                <rect key="frame" x="208" y="610" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSS-Ds-nd2">
+                                <rect key="frame" x="192" y="404" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="fcl-DD-RmT" kind="show" id="kao-ts-mER"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZEC-HL-nAR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -92,13 +109,85 @@
             </objects>
             <point key="canvasLocation" x="1518.3206106870227" y="-330.28169014084511"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Forgot Password View Controller-->
+        <scene sceneID="oHx-eA-txM">
+            <objects>
+                <viewController id="fPr-fu-6Xo" customClass="ForgotPasswordViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hQ9-Z4-m1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-jz-b5q">
+                                <rect key="frame" x="178" y="389" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="jgU-k4-lgE" kind="show" id="d9H-eq-9y3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2i-Sh-Kwx">
+                                <rect key="frame" x="159" y="631" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="fcl-DD-RmT" kind="show" id="1ne-KG-scC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MJ4-vh-Ta9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vmk-pv-wlO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psZ-AG-tNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2639" y="496"/>
+        </scene>
+        <!--Refresh Password View Controller-->
+        <scene sceneID="tu9-Ox-Lfx">
+            <objects>
+                <viewController id="jgU-k4-lgE" customClass="RefreshPasswordViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="haf-0e-ege">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fdr-45-ZGV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0jd-1G-Cnk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xsh-qb-7rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3828" y="496"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="7po-tA-gG7">
             <objects>
-                <viewController id="fcl-DD-RmT" customClass="RegisterViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fcl-DD-RmT" customClass="LoginViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tdx-nf-dKW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fi-bF-Inh">
+                                <rect key="frame" x="159" y="457" width="75" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="fPr-fu-6Xo" kind="show" id="KAD-xe-vDf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iov-dp-DJY">
+                                <rect key="frame" x="214" y="189" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="cYp-mo-6zF" kind="show" id="IQP-0o-laf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2dq-q1-gHz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -106,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIX-oC-6r4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518.3206106870227" y="496.47887323943667"/>
+            <point key="canvasLocation" x="1516.7938931297708" y="496.47887323943667"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GLX-Gb-EHJ">
@@ -127,6 +216,10 @@
             <point key="canvasLocation" x="-648.09160305343505" y="85.91549295774648"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1ne-KG-scC"/>
+        <segue reference="RhN-N9-mCs"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="onboarding" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
