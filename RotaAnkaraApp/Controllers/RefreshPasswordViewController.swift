@@ -9,21 +9,41 @@ import UIKit
 
 class RefreshPasswordViewController: UIViewController {
 
+    @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var refreshColorButton: UIButton!
+    @IBOutlet weak var refreshColorButton2: UIButton!
+    @IBOutlet weak var newPasswordAgainRefreshField: UITextField!
+    @IBOutlet weak var newPasswordRefreshField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        newPasswordRefreshField.textContentType = .username
+        newPasswordAgainRefreshField.textContentType = .username
+        refreshColorButton.setButton(title: "")
+        refreshColorButton2.setButton(title: "")
+        confirmButton.setButton(title: "Onayla")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+     @IBAction func newPasswordRefreshFieldPressed(_ sender: UITextField) {
+         newPasswordRefreshField.text = ""
+         newPasswordRefreshField.isSecureTextEntry = true
+     }
+    
+    @IBAction func newPasswordAgainRefreshField(_ sender: UITextField) {
+        newPasswordAgainRefreshField.text = ""
+        newPasswordAgainRefreshField.isSecureTextEntry = true
     }
-    */
-
+    @IBAction func confirmButtonPressed(_ sender: UIButton) {
+        
+        let password = newPasswordRefreshField.text
+        let passwordAgain = newPasswordAgainRefreshField.text
+        
+        if password == passwordAgain {
+            self.performSegue(withIdentifier: "renewPasswordLogin", sender: self)
+        }
+        else
+        {
+            print("The two passwords are not the same")
+        }
+    }
+    
 }

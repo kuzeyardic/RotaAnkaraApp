@@ -463,14 +463,111 @@
                     <view key="view" contentMode="scaleToFill" id="haf-0e-ege">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-YX-eUy">
+                                <rect key="frame" x="61.666666666666657" y="275.33333333333337" width="270" height="291.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifremi Yenile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZv-28-2eZ">
+                                        <rect key="frame" x="71" y="0.0" width="127.66666666666669" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8dk-GL-0xm">
+                                        <rect key="frame" x="0.0" y="89.333333333333371" width="270" height="85"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Yeni Şifre Tekrar" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW3-Gr-RcI">
+                                                <rect key="frame" x="20" y="0.0" width="230" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="92a-27-t9a"/>
+                                                    <constraint firstAttribute="width" constant="230" id="v83-7g-Rkf"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailFieldForgotPasswordPressed:" destination="fPr-fu-6Xo" eventType="editingDidBegin" id="1T1-s1-zlV"/>
+                                                    <action selector="loginEmailPressed:" destination="fcl-DD-RmT" eventType="editingDidBegin" id="SJb-60-dEI"/>
+                                                    <action selector="newPasswordAgainRefreshField:" destination="jgU-k4-lgE" eventType="editingDidBegin" id="cpB-jx-lB8"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-zo-k5W">
+                                                <rect key="frame" x="0.0" y="37" width="270" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="270" id="cWr-jx-3Z5"/>
+                                                    <constraint firstAttribute="height" constant="4" id="yc1-4N-TXg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Yeni Şifre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-9r-Cgz">
+                                                <rect key="frame" x="20" y="44" width="230" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="D0C-pK-fGi"/>
+                                                    <constraint firstAttribute="height" constant="34" id="abQ-RF-ole"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailFieldForgotPasswordPressed:" destination="fPr-fu-6Xo" eventType="editingDidBegin" id="hAq-dG-JHr"/>
+                                                    <action selector="loginEmailPressed:" destination="fcl-DD-RmT" eventType="editingDidBegin" id="K5y-FM-qAG"/>
+                                                    <action selector="newPasswordRefreshFieldPressed:" destination="jgU-k4-lgE" eventType="editingDidBegin" id="it3-7Q-fJq"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNO-tx-0JI">
+                                                <rect key="frame" x="0.0" y="81" width="270" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="270" id="0g5-YW-FbF"/>
+                                                    <constraint firstAttribute="height" constant="4" id="vrw-fH-8In"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGh-f8-a7q">
+                                        <rect key="frame" x="0.0" y="237.33333333333331" width="270" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="R42-1t-k2U"/>
+                                            <constraint firstAttribute="height" constant="54" id="Zeo-hM-4IU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Onayla">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="confirmButtonPressed:" destination="jgU-k4-lgE" eventType="touchUpInside" id="4jH-Kp-ANy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8dk-GL-0xm" firstAttribute="centerX" secondItem="3rF-YX-eUy" secondAttribute="centerX" id="pH6-J1-ycX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fdr-45-ZGV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3rF-YX-eUy" firstAttribute="centerY" secondItem="haf-0e-ege" secondAttribute="centerY" id="bOC-8k-i1F"/>
+                            <constraint firstItem="3rF-YX-eUy" firstAttribute="centerX" secondItem="haf-0e-ege" secondAttribute="centerX" id="y7P-YV-Bjj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0jd-1G-Cnk"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="YGh-f8-a7q" id="MMD-Uy-7ot"/>
+                        <outlet property="newPasswordAgainRefreshField" destination="lW3-Gr-RcI" id="s9I-Cu-qKA"/>
+                        <outlet property="newPasswordRefreshField" destination="4QN-9r-Cgz" id="3H4-Qu-uKG"/>
+                        <outlet property="refreshColorButton" destination="iZo-zo-k5W" id="SXu-zP-KYh"/>
+                        <outlet property="refreshColorButton2" destination="MNO-tx-0JI" id="SIE-mB-Tev"/>
+                        <segue destination="fcl-DD-RmT" kind="show" identifier="renewPasswordLogin" id="vrr-rB-QuT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsh-qb-7rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3828" y="496"/>
+            <point key="canvasLocation" x="3868" y="496"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="7po-tA-gG7">
@@ -660,16 +757,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1ne-KG-scC"/>
+        <segue reference="vrr-rB-QuT"/>
         <segue reference="DUG-Yz-BEV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="onboarding" width="390" height="844"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
