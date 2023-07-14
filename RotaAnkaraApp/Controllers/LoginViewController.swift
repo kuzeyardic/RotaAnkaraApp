@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginPasswordTextField: UITextField!
+    @IBOutlet weak var loginEmailTextField: UITextField!
     @IBOutlet weak var bb2: UIButton!
     @IBOutlet weak var bb1: UIButton!
     @IBOutlet weak var loginToAppButton: UIButton!
@@ -18,7 +20,15 @@ class LoginViewController: UIViewController {
         loginToAppButton.setButton(title: "Giriş Yap")
         bb1.setButton(title: "")
         bb2.setButton(title: "")
+        loginPasswordTextField.textContentType = .username
     }
     
-  
+    @IBAction func loginEmailPressed(_ sender: UITextField) {
+        loginEmailTextField.text = ""
+    }
+    
+    @IBAction func loginPasswordPressed(_ sender: UITextField) {
+        loginPasswordTextField.text = ""
+        loginPasswordTextField.isSecureTextEntry = true
+    }
 }

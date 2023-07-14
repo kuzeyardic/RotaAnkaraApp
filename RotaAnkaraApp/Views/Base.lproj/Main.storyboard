@@ -106,6 +106,9 @@
                                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailFieldRegisterPressed:" destination="cYp-mo-6zF" eventType="editingDidBegin" id="E8P-3C-D7N"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gu-mJ-TYk">
                                                 <rect key="frame" x="0.0" y="37" width="270" height="4"/>
@@ -126,6 +129,9 @@
                                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="nameFieldRegisterPressed:" destination="cYp-mo-6zF" eventType="editingDidBegin" id="Tic-Zr-feD"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-Jb-Dcb">
                                                 <rect key="frame" x="0.0" y="81" width="270" height="4"/>
@@ -146,6 +152,9 @@
                                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="surnameFieldRegisterPressed:" destination="cYp-mo-6zF" eventType="editingDidBegin" id="Gfb-zg-pK1"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-mz-Jmg">
                                                 <rect key="frame" x="0.0" y="124.99999999999997" width="270" height="4"/>
@@ -166,6 +175,9 @@
                                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="passwordFieldRegisterPressed:" destination="cYp-mo-6zF" eventType="editingDidBegin" id="OBp-F2-fi8"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIK-g0-xz1">
                                                 <rect key="frame" x="0.0" y="168.99999999999997" width="270" height="4"/>
@@ -213,6 +225,9 @@
                                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="passwordConfirmRegisterPressed:" destination="cYp-mo-6zF" eventType="editingDidBegin" id="I0r-Mu-AW5"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mII-7N-qtv">
                                                 <rect key="frame" x="0.0" y="284" width="270" height="4"/>
@@ -282,7 +297,12 @@
                         <outlet property="b3" destination="a2B-mz-Jmg" id="2t4-py-IwC"/>
                         <outlet property="b4" destination="fIK-g0-xz1" id="aZE-FM-hTk"/>
                         <outlet property="b5" destination="mII-7N-qtv" id="Kat-KM-bAP"/>
+                        <outlet property="emailFieldRegister" destination="LlM-Bd-JTr" id="C6l-TO-AAA"/>
+                        <outlet property="nameFieldRegister" destination="2KU-Bn-pUT" id="w7J-xD-2UP"/>
+                        <outlet property="passwordConfirmFieldRegister" destination="d4R-H1-KJ9" id="aci-Lv-aS4"/>
+                        <outlet property="passwordFieldRegister" destination="XDP-OW-C8e" id="Jtk-hr-ep9"/>
                         <outlet property="registerToAppButton" destination="BnM-Uh-vhc" id="Tjn-K8-06p"/>
+                        <outlet property="surnameFieldRegister" destination="egV-BE-Dkv" id="Pz7-hG-W8p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vng-FW-cv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,6 +394,9 @@
                                                         <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="loginEmailPressed:" destination="fcl-DD-RmT" eventType="editingDidBegin" id="Ucp-a0-26o"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEk-IX-bKw">
                                                         <rect key="frame" x="0.0" y="43" width="270" height="4"/>
@@ -394,6 +417,9 @@
                                                         <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="loginPasswordPressed:" destination="fcl-DD-RmT" eventType="editingDidBegin" id="sax-MB-xnK"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-TH-JBt">
                                                         <rect key="frame" x="0.0" y="99" width="270" height="4"/>
@@ -494,6 +520,8 @@
                     <connections>
                         <outlet property="bb1" destination="bE2-TH-JBt" id="0wh-AU-H5f"/>
                         <outlet property="bb2" destination="YEk-IX-bKw" id="RYA-or-T49"/>
+                        <outlet property="loginEmailTextField" destination="cgj-Fg-TXQ" id="DSE-ih-9na"/>
+                        <outlet property="loginPasswordTextField" destination="yPk-6E-S8A" id="XpQ-Ue-5vb"/>
                         <outlet property="loginToAppButton" destination="Uix-u3-CgY" id="bwG-Re-CqE"/>
                     </connections>
                 </viewController>
