@@ -15,40 +15,14 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         
         // Register Button
-        let registerGradientLayer = CAGradientLayer()
-        registerGradientLayer.frame = registerButton.bounds
-        registerGradientLayer.colors = [
-            UIColor(red: 190/255, green: 49/255, blue: 102/255, alpha: 1.0).cgColor,
-            UIColor(red: 130/255, green: 98/255, blue: 165/255, alpha: 1.0).cgColor,
-            UIColor(red: 196/255, green: 225/255, blue: 241/255, alpha: 1.0).cgColor
-        ]
-        registerGradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        registerGradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        registerGradientLayer.cornerRadius = 33
-        
-        registerButton.layer.insertSublayer(registerGradientLayer, at: 0)
-        
-        registerButton.setTitle("Hesap Oluştur", for: .normal)
-        registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-        registerButton.contentEdgeInsets = UIEdgeInsets(top: 13, left: 55, bottom: 13, right: 55)
+        registerButton.setButton( title: "Hesap oluştur")
         
         // Login Button
-        let loginGradientLayer = CAGradientLayer()
-        loginGradientLayer.frame = loginButton.bounds
-        loginGradientLayer.colors = [
-            UIColor(red: 190/255, green: 49/255, blue: 102/255, alpha: 1.0).cgColor,
-            UIColor(red: 130/255, green: 98/255, blue: 165/255, alpha: 1.0).cgColor
-        ]
-        loginGradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        loginGradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        loginGradientLayer.cornerRadius = 33
-        
-        loginButton.layer.insertSublayer(loginGradientLayer, at: 0)
-        
-        loginButton.setTitle("Giriş Yap", for: .normal)
-        loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-        loginButton.contentEdgeInsets = UIEdgeInsets(top: 13, left: 55, bottom: 13, right: 55)
+        loginButton.setButton(title: "Giriş yap")
+
     }
+    
+  
 }
 
 
@@ -62,4 +36,26 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+extension UIButton {
+    func setButton(title: String)
+    {
+        let buttonGradientLayer = CAGradientLayer()
+        buttonGradientLayer.frame = self.bounds
+        buttonGradientLayer.colors = [
+            UIColor(red: 190/255, green: 49/255, blue: 102/255, alpha: 1.0).cgColor,
+            UIColor(red: 130/255, green: 98/255, blue: 165/255, alpha: 1.0).cgColor,
+            UIColor(red: 196/255, green: 225/255, blue: 241/255, alpha: 1.0).cgColor
+        ]
+        buttonGradientLayer.startPoint = CGPoint(x: 0, y: 1)
+        buttonGradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        buttonGradientLayer.cornerRadius = 33
+        
+        self.layer.insertSublayer(buttonGradientLayer, at: 0)
+        
+        self.setTitle(title, for: .normal)
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        self.contentEdgeInsets = UIEdgeInsets(top: 13, left: 55, bottom: 13, right: 55)
+    }
+}
+
 
