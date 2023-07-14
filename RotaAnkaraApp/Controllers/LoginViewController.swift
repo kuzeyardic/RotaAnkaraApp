@@ -9,22 +9,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var bb2: UIButton!
+    @IBOutlet weak var bb1: UIButton!
     @IBOutlet weak var loginToAppButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
         loginToAppButton.setButton(title: "Giriş Yap")
+        bb1.setButton(title: "")
+        bb2.setButton(title: "")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
