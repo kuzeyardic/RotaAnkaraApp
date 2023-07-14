@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UBB-8e-W1w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UBB-8e-W1w">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,11 +81,11 @@
             <objects>
                 <viewController id="cYp-mo-6zF" customClass="RegisterViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBK-Z6-8LT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="K27-6l-P96">
-                                <rect key="frame" x="52.333333333333343" y="98.000000000000028" width="288.33333333333326" height="477.66666666666674"/>
+                                <rect key="frame" x="52.333333333333343" y="157.00000000000003" width="288.33333333333326" height="477.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kayıt Ol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7b-cl-1Vj">
                                         <rect key="frame" x="107.66666666666666" y="0.0" width="73.333333333333343" height="26.333333333333332"/>
@@ -128,7 +128,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-Jb-Dcb">
-                                                <rect key="frame" x="0.0" y="81" width="270" height="4"/>
+                                                <rect key="frame" x="0.0" y="80.999999999999972" width="270" height="4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="270" id="0I0-qJ-A4z"/>
                                                     <constraint firstAttribute="height" constant="4" id="5es-hI-QVc"/>
@@ -137,7 +137,7 @@
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Soy İsmin" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egV-BE-Dkv">
-                                                <rect key="frame" x="20" y="88" width="230" height="34"/>
+                                                <rect key="frame" x="20" y="87.999999999999972" width="230" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="4SD-Hu-0oe"/>
@@ -226,7 +226,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnM-Uh-vhc">
-                                        <rect key="frame" x="9.3333333333333144" y="364.33333333333331" width="270" height="54"/>
+                                        <rect key="frame" x="9.3333333333333144" y="364.33333333333337" width="270" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="Qkc-Cv-QBr"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="X1e-Bl-7a7"/>
@@ -294,43 +294,75 @@
             <objects>
                 <viewController id="fPr-fu-6Xo" customClass="ForgotPasswordViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQ9-Z4-m1Q">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-jz-b5q">
-                                <rect key="frame" x="178" y="389" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="jgU-k4-lgE" kind="show" id="d9H-eq-9y3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2i-Sh-Kwx">
-                                <rect key="frame" x="159" y="631" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="fcl-DD-RmT" kind="show" id="1ne-KG-scC"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cC7-9w-OK5">
+                                <rect key="frame" x="61.666666666666657" y="565" width="270" height="118"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GyW-9f-Wq1">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="118"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-jz-b5q">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="270" id="RpF-nS-wvX"/>
+                                                    <constraint firstAttribute="height" constant="54" id="juN-F4-QbC"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Gönder">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="jgU-k4-lgE" kind="show" id="d9H-eq-9y3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2i-Sh-Kwx">
+                                                <rect key="frame" x="0.0" y="64" width="270" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="270" id="AG1-82-YLI"/>
+                                                    <constraint firstAttribute="height" constant="54" id="MwO-xc-JVs"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="İptal Et">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="fcl-DD-RmT" kind="show" id="1ne-KG-scC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GyW-9f-Wq1" firstAttribute="centerX" secondItem="cC7-9w-OK5" secondAttribute="centerX" id="f10-aB-yvh"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MJ4-vh-Ta9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cC7-9w-OK5" firstAttribute="centerX" secondItem="hQ9-Z4-m1Q" secondAttribute="centerX" id="08e-UT-Au5"/>
+                            <constraint firstItem="cC7-9w-OK5" firstAttribute="centerX" secondItem="hQ9-Z4-m1Q" secondAttribute="centerX" id="baC-fP-opp"/>
+                            <constraint firstItem="MJ4-vh-Ta9" firstAttribute="bottom" secondItem="cC7-9w-OK5" secondAttribute="bottom" constant="100" id="sAP-C3-TbU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vmk-pv-wlO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="j2i-Sh-Kwx" id="0nJ-fC-ERw"/>
+                        <outlet property="sendToRefreshButton" destination="qNL-jz-b5q" id="g29-sr-eax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psZ-AG-tNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2639" y="496"/>
+            <point key="canvasLocation" x="2638.9312977099235" y="495.77464788732397"/>
         </scene>
         <!--Refresh Password View Controller-->
         <scene sceneID="tu9-Ox-Lfx">
             <objects>
                 <viewController id="jgU-k4-lgE" customClass="RefreshPasswordViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haf-0e-ege">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fdr-45-ZGV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -346,11 +378,11 @@
             <objects>
                 <viewController id="fcl-DD-RmT" customClass="LoginViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tdx-nf-dKW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-be-UcL">
-                                <rect key="frame" x="57.333333333333343" y="215.66666666666666" width="278.33333333333326" height="410.66666666666674"/>
+                                <rect key="frame" x="57.333333333333343" y="186.33333333333334" width="278.33333333333326" height="410.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giriş Yap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9W4-CH-1gL">
                                         <rect key="frame" x="97.333333333333314" y="0.0" width="83.666666666666686" height="26.333333333333332"/>
@@ -418,7 +450,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beni Hatırla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7B5-vW-hzy">
-                                                        <rect key="frame" x="57.333333333333343" y="4.6666666666666856" width="56" height="12"/>
+                                                        <rect key="frame" x="57.333333333333343" y="4.6666666666666288" width="56" height="12"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -458,7 +490,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-kM-R6a">
-                                        <rect key="frame" x="0.0" y="376.33333333333337" width="278.33333333333331" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="376.33333333333326" width="278.33333333333331" height="34.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Henüz hesabın yok mu?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbI-Sq-41k">
                                                 <rect key="frame" x="0.0" y="0.0" width="181" height="34.333333333333336"/>
@@ -521,7 +553,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kao-ts-mER"/>
+        <segue reference="1ne-KG-scC"/>
         <segue reference="IQP-0o-laf"/>
     </inferredMetricsTieBreakers>
     <resources>

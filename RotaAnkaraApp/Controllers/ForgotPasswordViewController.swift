@@ -14,7 +14,7 @@ class ForgotPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-       
+        view.backgroundColor = .black
         sendToRefreshButton.setButton(title: "Gönder")
         cancelButton.setButton(title: "İptal Et")
         
