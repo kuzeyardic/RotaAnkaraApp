@@ -17,6 +17,9 @@
 		6E1811912A5FEE28007B2A39 /* RotaAnkaraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1811902A5FEE28007B2A39 /* RotaAnkaraAppTests.swift */; };
 		6E18119B2A5FEE28007B2A39 /* RotaAnkaraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18119A2A5FEE28007B2A39 /* RotaAnkaraAppUITests.swift */; };
 		6E18119D2A5FEE28007B2A39 /* RotaAnkaraAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18119C2A5FEE28007B2A39 /* RotaAnkaraAppUITestsLaunchTests.swift */; };
+		6E8D69CF2A612A31005CCD2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D69CE2A612A31005CCD2A /* LoginViewController.swift */; };
+		6E8D69D12A612A40005CCD2A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D69D02A612A40005CCD2A /* RegisterViewController.swift */; };
+		6E8D69D32A612A61005CCD2A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D69D22A612A61005CCD2A /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		6E1811962A5FEE28007B2A39 /* RotaAnkaraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotaAnkaraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E18119A2A5FEE28007B2A39 /* RotaAnkaraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaAnkaraAppUITests.swift; sourceTree = "<group>"; };
 		6E18119C2A5FEE28007B2A39 /* RotaAnkaraAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaAnkaraAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E8D69CE2A612A31005CCD2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E8D69D02A612A40005CCD2A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6E8D69D22A612A61005CCD2A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = RotaAnkaraApp/Controllers/UIButtonExtension.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				6E18117D2A5FEE26007B2A39 /* OnboardingViewController.swift */,
+				6E8D69CE2A612A31005CCD2A /* LoginViewController.swift */,
+				6E8D69D02A612A40005CCD2A /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 		6E03E7BE2A601110008BE723 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6E8D69D22A612A61005CCD2A /* UIButtonExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +305,9 @@
 				6E18117E2A5FEE26007B2A39 /* OnboardingViewController.swift in Sources */,
 				6E18117A2A5FEE26007B2A39 /* AppDelegate.swift in Sources */,
 				6E18117C2A5FEE26007B2A39 /* SceneDelegate.swift in Sources */,
+				6E8D69D12A612A40005CCD2A /* RegisterViewController.swift in Sources */,
+				6E8D69D32A612A61005CCD2A /* UIButtonExtension.swift in Sources */,
+				6E8D69CF2A612A31005CCD2A /* LoginViewController.swift in Sources */,
 				4A15A26A2A6038A90011AE85 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UBB-8e-W1w">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -21,8 +21,8 @@
                                 <rect key="frame" x="0.0" y="-8" width="393" height="869"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ybP-gx-hwi">
-                                <rect key="frame" x="61.666666666666657" y="526.66666666666663" width="270" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ybP-gx-hwi">
+                                <rect key="frame" x="61.666666666666657" y="528.66666666666663" width="270" height="126"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21P-XE-lHV">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="54"/>
@@ -36,11 +36,11 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="cYp-mo-6zF" kind="presentation" id="RhN-N9-mCs"/>
+                                            <segue destination="cYp-mo-6zF" kind="show" id="RhN-N9-mCs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQh-ce-A0W">
-                                        <rect key="frame" x="0.0" y="74" width="270" height="54"/>
+                                        <rect key="frame" x="0.0" y="72" width="270" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="0fA-MA-eyU"/>
                                             <constraint firstAttribute="height" constant="54" id="QFb-eF-30w"/>
@@ -52,7 +52,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="fcl-DD-RmT" kind="presentation" id="hmn-IL-K7e"/>
+                                            <segue destination="fcl-DD-RmT" kind="show" id="hmn-IL-K7e"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,6 +66,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ybP-gx-hwi" secondAttribute="bottom" constant="163.33000000000001" id="rWz-1V-3oL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="24J-TB-vaO"/>
                     <connections>
                         <outlet property="loginButton" destination="rQh-ce-A0W" id="WQA-am-MQL"/>
                         <outlet property="registerButton" destination="21P-XE-lHV" id="wbK-59-N3i"/>
@@ -73,37 +74,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-648.09160305343505" y="85.91549295774648"/>
+            <point key="canvasLocation" x="278.62595419847327" y="85.91549295774648"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="iZ7-JQ-S4Y">
             <objects>
-                <viewController id="cYp-mo-6zF" sceneMemberID="viewController">
+                <viewController id="cYp-mo-6zF" customClass="LoginViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBK-Z6-8LT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ZEC-HL-nAR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Shw-YF-Pf4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vng-FW-cv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591.60305343511448" y="-330.28169014084511"/>
+            <point key="canvasLocation" x="1518.3206106870227" y="-330.28169014084511"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="7po-tA-gG7">
             <objects>
-                <viewController id="fcl-DD-RmT" sceneMemberID="viewController">
+                <viewController id="fcl-DD-RmT" customClass="RegisterViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tdx-nf-dKW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2dq-q1-gHz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JWC-1e-0er"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIX-oC-6r4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="497"/>
+            <point key="canvasLocation" x="1518.3206106870227" y="496.47887323943667"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GLX-Gb-EHJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UBB-8e-W1w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axK-QE-gDe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Py-Oi-xVR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dq-YD-wfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-648.09160305343505" y="85.91549295774648"/>
         </scene>
     </scenes>
     <resources>
