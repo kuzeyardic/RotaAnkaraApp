@@ -11,8 +11,10 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .black
         self.navigationItem.hidesBackButton = true
-        // Do any additional setup after loading the view.
+        
     }
     
 
