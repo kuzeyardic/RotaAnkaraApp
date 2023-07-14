@@ -9,10 +9,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginToAppButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        // Do any additional setup after loading the view.
+        loginToAppButton.setButton(title: "Giriş Yap")
     }
     
 

@@ -9,10 +9,11 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var registerToAppButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        // Do any additional setup after loading the view.
+        registerToAppButton.setButton(title: "Kayıt Ol")
     }
     
 

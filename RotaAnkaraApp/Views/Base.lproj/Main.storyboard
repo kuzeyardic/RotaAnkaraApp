@@ -81,29 +81,44 @@
             <objects>
                 <viewController id="cYp-mo-6zF" customClass="RegisterViewController" customModule="RotaAnkaraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBK-Z6-8LT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnM-Uh-vhc">
-                                <rect key="frame" x="208" y="610" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnM-Uh-vhc">
+                                <rect key="frame" x="61" y="617" width="270" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Qkc-Cv-QBr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="X1e-Bl-7a7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="ayd-62-Iq8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="j2f-yB-eDh"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSS-Ds-nd2">
-                                <rect key="frame" x="192" y="404" width="75" height="35"/>
+                                <rect key="frame" x="235" y="766" width="96" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap!"/>
                                 <connections>
                                     <segue destination="fcl-DD-RmT" kind="show" id="kao-ts-mER"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZEC-HL-nAR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BnM-Uh-vhc" firstAttribute="leading" secondItem="ZEC-HL-nAR" secondAttribute="leading" constant="208" id="2oi-qM-Oz3"/>
+                            <constraint firstItem="ZEC-HL-nAR" firstAttribute="bottom" secondItem="BnM-Uh-vhc" secondAttribute="bottom" constant="197" id="asU-au-nj1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Shw-YF-Pf4"/>
+                    <connections>
+                        <outlet property="registerToAppButton" destination="BnM-Uh-vhc" id="Tjn-K8-06p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vng-FW-cv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,33 +184,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fi-bF-Inh">
-                                <rect key="frame" x="159" y="457" width="75" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="fPr-fu-6Xo" kind="show" id="KAD-xe-vDf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iov-dp-DJY">
-                                <rect key="frame" x="214" y="189" width="75" height="35"/>
+                                <rect key="frame" x="220" y="708" width="88" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol!"/>
                                 <connections>
                                     <segue destination="cYp-mo-6zF" kind="show" id="IQP-0o-laf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-u3-CgY">
+                                <rect key="frame" x="61" y="370" width="270" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="Fq8-FO-Cot"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="IdG-Sy-saP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="ajM-hD-kcb"/>
+                                    <constraint firstAttribute="height" constant="54" id="fQr-S4-sUD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fi-bF-Inh">
+                                <rect key="frame" x="117" y="335" width="158" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Şifremi Unuttum"/>
+                                <connections>
+                                    <segue destination="fPr-fu-6Xo" kind="show" id="KAD-xe-vDf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2dq-q1-gHz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="JWC-1e-0er"/>
+                    <connections>
+                        <outlet property="loginToAppButton" destination="Uix-u3-CgY" id="bwG-Re-CqE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIX-oC-6r4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516.7938931297708" y="496.47887323943667"/>
+            <point key="canvasLocation" x="1513.7404580152672" y="496.47887323943667"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GLX-Gb-EHJ">
@@ -217,8 +249,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1ne-KG-scC"/>
-        <segue reference="RhN-N9-mCs"/>
+        <segue reference="kao-ts-mER"/>
+        <segue reference="IQP-0o-laf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="onboarding" width="390" height="844"/>
