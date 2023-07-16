@@ -20,7 +20,7 @@ extension UIButton {
         ]
         buttonGradientLayer.startPoint = CGPoint(x: 0, y: 1)
         buttonGradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        buttonGradientLayer.cornerRadius = 33
+        buttonGradientLayer.cornerRadius = 27
         
         self.layer.insertSublayer(buttonGradientLayer, at: 0)
         
