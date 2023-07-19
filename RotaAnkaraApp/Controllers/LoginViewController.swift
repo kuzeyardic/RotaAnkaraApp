@@ -10,6 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginPasswordTextField: UITextField!
+    @IBOutlet weak var rememberMeSwitch: UISwitch!
     @IBOutlet weak var loginEmailTextField: UITextField!
     @IBOutlet weak var bb2: UIButton!
     @IBOutlet weak var bb1: UIButton!
@@ -17,6 +18,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
+        let scale: CGFloat = 0.45 // 1.5 times the original size
+        rememberMeSwitch.transform = CGAffineTransform(scaleX: scale, y: scale)
         loginToAppButton.setButton(title: "Giriş Yap")
         bb1.setButton(title: "")
         bb2.setButton(title: "")
