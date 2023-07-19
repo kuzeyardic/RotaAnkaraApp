@@ -1,16 +1,18 @@
 //
-//  FavouritesViewController.swift
+//  UserPageViewController.swift
 //  RotaAnkaraApp
 //
-//  Created by Büşra Kocakuşaklı on 19.07.2023.
+//  Created by Berke Kuzey Ardıç on 19.07.2023.
 //
 
 import UIKit
 
-class FavouritesViewController: UIViewController {
+class UserPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.view.backgroundColor = .yellow
 
         // Do any additional setup after loading the view.
     }

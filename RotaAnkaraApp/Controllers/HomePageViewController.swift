@@ -1,17 +1,18 @@
 //
-//  HomeViewController.swift
+//  HomePageViewController.swift
 //  RotaAnkaraApp
 //
-//  Created by Büşra Kocakuşaklı on 19.07.2023.
+//  Created by Berke Kuzey Ardıç on 19.07.2023.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.view.backgroundColor = .blue
         // Do any additional setup after loading the view.
     }
     

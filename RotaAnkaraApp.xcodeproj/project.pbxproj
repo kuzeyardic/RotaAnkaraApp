@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A15A26A2A6038A90011AE85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15A2692A6038A90011AE85 /* Constants.swift */; };
 		4A15A26C2A6131F90011AE85 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15A26B2A6131F90011AE85 /* UILabelExtension.swift */; };
-		4A9CFC1F2A67C15900869A69 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CFC1E2A67C15900869A69 /* TabBarViewController.swift */; };
-		4A9CFC212A67CA5700869A69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CFC202A67CA5700869A69 /* HomeViewController.swift */; };
-		4A9CFC232A67CAE200869A69 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CFC222A67CAE200869A69 /* FavouritesViewController.swift */; };
-		4A9CFC252A67CAFF00869A69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CFC242A67CAFF00869A69 /* ProfileViewController.swift */; };
 		6E18117A2A5FEE26007B2A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1811792A5FEE26007B2A39 /* AppDelegate.swift */; };
 		6E18117C2A5FEE26007B2A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18117B2A5FEE26007B2A39 /* SceneDelegate.swift */; };
 		6E18117E2A5FEE26007B2A39 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18117D2A5FEE26007B2A39 /* OnboardingViewController.swift */; };
@@ -22,6 +18,10 @@
 		6E1811912A5FEE28007B2A39 /* RotaAnkaraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1811902A5FEE28007B2A39 /* RotaAnkaraAppTests.swift */; };
 		6E18119B2A5FEE28007B2A39 /* RotaAnkaraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18119A2A5FEE28007B2A39 /* RotaAnkaraAppUITests.swift */; };
 		6E18119D2A5FEE28007B2A39 /* RotaAnkaraAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18119C2A5FEE28007B2A39 /* RotaAnkaraAppUITestsLaunchTests.swift */; };
+		6E5731792A68073100BE0040 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5731782A68073100BE0040 /* HomePageViewController.swift */; };
+		6E57317B2A68073D00BE0040 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E57317A2A68073D00BE0040 /* UserPageViewController.swift */; };
+		6E57317D2A68075500BE0040 /* FavoritesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E57317C2A68075500BE0040 /* FavoritesPageViewController.swift */; };
+		6E57317F2A68082D00BE0040 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E57317E2A68082D00BE0040 /* TabBarViewController.swift */; };
 		6E8D69CF2A612A31005CCD2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D69CE2A612A31005CCD2A /* LoginViewController.swift */; };
 		6E8D69D12A612A40005CCD2A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D69D02A612A40005CCD2A /* RegisterViewController.swift */; };
 		6E8D69D32A612A61005CCD2A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D69D22A612A61005CCD2A /* UIButtonExtension.swift */; };
@@ -50,10 +50,6 @@
 /* Begin PBXFileReference section */
 		4A15A2692A6038A90011AE85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A15A26B2A6131F90011AE85 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = SOURCE_ROOT; };
-		4A9CFC1E2A67C15900869A69 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		4A9CFC202A67CA5700869A69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4A9CFC222A67CAE200869A69 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
-		4A9CFC242A67CAFF00869A69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6E1811762A5FEE26007B2A39 /* RotaAnkaraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaAnkaraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1811792A5FEE26007B2A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E18117B2A5FEE26007B2A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +63,10 @@
 		6E1811962A5FEE28007B2A39 /* RotaAnkaraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotaAnkaraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E18119A2A5FEE28007B2A39 /* RotaAnkaraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaAnkaraAppUITests.swift; sourceTree = "<group>"; };
 		6E18119C2A5FEE28007B2A39 /* RotaAnkaraAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaAnkaraAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E5731782A68073100BE0040 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		6E57317A2A68073D00BE0040 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
+		6E57317C2A68075500BE0040 /* FavoritesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPageViewController.swift; sourceTree = "<group>"; };
+		6E57317E2A68082D00BE0040 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		6E8D69CE2A612A31005CCD2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6E8D69D02A612A40005CCD2A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6E8D69D22A612A61005CCD2A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = RotaAnkaraApp/Controllers/UIButtonExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -108,10 +108,10 @@
 				6E8D69D02A612A40005CCD2A /* RegisterViewController.swift */,
 				6E8D69D42A612E55005CCD2A /* ForgotPasswordViewController.swift */,
 				6E8D69D62A612E64005CCD2A /* RefreshPasswordViewController.swift */,
-				4A9CFC1E2A67C15900869A69 /* TabBarViewController.swift */,
-				4A9CFC202A67CA5700869A69 /* HomeViewController.swift */,
-				4A9CFC222A67CAE200869A69 /* FavouritesViewController.swift */,
-				4A9CFC242A67CAFF00869A69 /* ProfileViewController.swift */,
+				6E5731782A68073100BE0040 /* HomePageViewController.swift */,
+				6E57317A2A68073D00BE0040 /* UserPageViewController.swift */,
+				6E57317C2A68075500BE0040 /* FavoritesPageViewController.swift */,
+				6E57317E2A68082D00BE0040 /* TabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,18 +333,18 @@
 			files = (
 				6E8D69D52A612E55005CCD2A /* ForgotPasswordViewController.swift in Sources */,
 				6E18117E2A5FEE26007B2A39 /* OnboardingViewController.swift in Sources */,
-				4A9CFC1F2A67C15900869A69 /* TabBarViewController.swift in Sources */,
 				4A15A26C2A6131F90011AE85 /* UILabelExtension.swift in Sources */,
-				4A9CFC252A67CAFF00869A69 /* ProfileViewController.swift in Sources */,
-				4A9CFC232A67CAE200869A69 /* FavouritesViewController.swift in Sources */,
 				6E18117A2A5FEE26007B2A39 /* AppDelegate.swift in Sources */,
+				6E57317F2A68082D00BE0040 /* TabBarViewController.swift in Sources */,
 				6E18117C2A5FEE26007B2A39 /* SceneDelegate.swift in Sources */,
 				6E8D69D12A612A40005CCD2A /* RegisterViewController.swift in Sources */,
+				6E57317B2A68073D00BE0040 /* UserPageViewController.swift in Sources */,
 				6E8D69D32A612A61005CCD2A /* UIButtonExtension.swift in Sources */,
+				6E5731792A68073100BE0040 /* HomePageViewController.swift in Sources */,
 				6E8D69D72A612E64005CCD2A /* RefreshPasswordViewController.swift in Sources */,
 				6E8D69CF2A612A31005CCD2A /* LoginViewController.swift in Sources */,
 				4A15A26A2A6038A90011AE85 /* Constants.swift in Sources */,
-				4A9CFC212A67CA5700869A69 /* HomeViewController.swift in Sources */,
+				6E57317D2A68075500BE0040 /* FavoritesPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

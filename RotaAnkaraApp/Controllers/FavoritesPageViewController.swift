@@ -1,16 +1,18 @@
 //
-//  ProfileViewController.swift
+//  FavoritesPageViewController.swift
 //  RotaAnkaraApp
 //
-//  Created by Büşra Kocakuşaklı on 19.07.2023.
+//  Created by Berke Kuzey Ardıç on 19.07.2023.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class FavoritesPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .red
 
         // Do any additional setup after loading the view.
     }
