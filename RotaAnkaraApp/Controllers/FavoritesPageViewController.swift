@@ -5,9 +5,9 @@
 //  Created by Berke Kuzey Ardıç on 19.07.2023.
 //
 
-import UIKit
+//import UIKit
 
-struct EventCategory {
+/*struct EventCategory {
     let name: String
     let imageName: String
 }
@@ -212,3 +212,4 @@ class FavoritesPageViewController: UIViewController, UICollectionViewDelegate, U
             navigationController?.pushViewController(eventDetailVC, animated: true)
         }
 }
+*/
