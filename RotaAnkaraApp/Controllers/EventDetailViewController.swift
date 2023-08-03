@@ -19,6 +19,7 @@ class EventDetailViewController: UIViewController {
 
         // View Controller'ı doldurmak için gerekli işlemleri burada gerçekleştirin.
         // Örneğin, resmi ve adını gösterin.
+        self.navigationItem.hidesBackButton = true
         setupUI()
     }
 
